@@ -1,0 +1,249 @@
+:root{
+  --shadow: rgba(14, 30, 37, 0.2) 1px 1px 10px 2px;
+}
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #9F9F9F;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the popup is on top */
+  }
+  
+  /* Styles for the popup */
+  .popup {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+   
+  }
+
+  .inputQuestion{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: var(--shadow);
+    color:#9F9F9F;
+    
+  }
+
+  .questionTypeDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    color: #9F9F9F;
+    align-items: center;
+  }
+
+  .isSelected{
+    background-color: #60B84B;
+
+  }
+  .buttons{
+    box-shadow: var(--shadow);
+    outline:none;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    color:#9F9F9F;
+    padding: 0.7rem;
+    width: 8rem;
+    font-size: 1rem;
+  }
+
+ 
+
+  .para{
+    color:#9F9F9F;
+    font-size: 1.2rem;
+  }
+
+  .popupActions{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .actionsButtons{
+    box-shadow: var(--shadow);
+    outline:none;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    padding: 0.7rem;
+    font-size: 1rem;
+    width:15rem;
+    margin: 2rem 1rem;
+    font-weight: 600;
+  }
+  .actionsButtons:hover{
+    background-color: #60B84B;
+    color: white;
+  }
+
+  .questionDiv{
+    display: flex;
+    justify-content: space-between;
+  }
+  .quetionNo{
+    display: flex;
+    align-items: center;
+  }
+  .QuestionNoDiv{
+    position: relative;
+  }
+  .qeustionButton{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 3rem;
+    font-size: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  }
+  .deleteQuetionButton{
+    background-color: white;
+    padding: 0;
+    outline: none;
+    font-size: 0.8rem;
+    border: none;
+    position: absolute;
+    top:0.6rem;
+    right: 0.5rem;
+  }
+
+  .addQeutionButton{
+    padding: 0px;
+    height: 3rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    
+  }
+
+  .optionTypeDiv{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0rem 2rem;
+  }
+
+  .optionsType{
+    margin: 0rem 0.5rem;
+  }
+  
+
+  .optionContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .options{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 30rem;
+  }
+  .radio{
+    margin: 0.5rem;
+  }
+
+  .optionInput{
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 14rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    box-shadow: var(--shadow);
+    color:#9F9F9F;
+    background-color: white;
+  }
+
+  .deletebutton{
+    background-color: white;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+  }
+
+  .timerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+  .timer{
+     display: flex;
+    flex-direction: column;
+  }
+
+  .timerButtons{
+    background-color: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.2rem 1rem;
+    margin: 0.5rem;
+
+  }
+
+
+  .SharePopUp{
+    margin: 3rem;
+    max-width: 35rem;
+  
+  }
+  
+  .headings{
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: 600;
+  }
+
+  .paraDiv{
+    background-color: #EDEDED;
+    margin: 0rem 2rem;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  .linkInfo{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .cancelButton{
+    padding: 0px;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem 1.5rem;
+  }
+
+  input::placeholder{
+    color: black;
+    opacity: 0.5;
+  }

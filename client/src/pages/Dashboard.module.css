@@ -1,0 +1,298 @@
+.mainContainer{
+    height: 100vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    justify-content: space-between;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;    
+    font-family: "Jomhuria", sans-serif;  
+    letter-spacing: 3px;
+    margin:2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.buttons{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 12rem;
+    margin: 1.5rem 0rem;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #474444;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid black;
+    margin: 0rem 1rem;
+    
+}
+
+.logout{
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    margin-top: 2rem
+}
+
+
+.parent{
+    position: relative;
+    background-color:#EDEDED ;
+    width: 100%;
+}
+
+.popupContainer{
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  
+  }
+
+.popup{
+    background-color: white;
+}
+
+/****************************styles for dashboard component******************************/
+
+
+
+.dashBoardContainer{
+    padding: 5rem;
+    padding-bottom: 0;
+}
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.countsDiv{
+    background-color: white;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 20rem;
+    text-align: center;
+    margin: 1rem
+}
+.count{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.countInfo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.section2{
+    margin: 3rem 2rem;
+}
+
+.section2Heading{
+    font-size: 2.2rem;
+    margin: 0.5rem;
+}
+
+.trendingDivContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0rem 3.5rem;
+    height: 20rem;
+    overflow-y: auto;
+
+    
+}
+
+.trendingDiv{
+    background-color: white;
+    width: 10rem;
+    padding: 0.5rem;
+    padding-bottom:0.5rem ;
+    margin: 1rem;
+   
+}
+
+.quizInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.impressions{
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: #FF5D01;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.impressionsDiv{
+    align-content: center;
+}
+
+.quizName{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.createdDate{
+    font-size: 0.8rem;
+    color: #60B84B;
+    
+}
+
+
+/*******************************************  Analystics.jsx  ************************************************/
+
+.AnalyticsContainer{
+    padding: 3rem;
+    padding-bottom: 0;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.AnalyticsHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #5076FF;
+    margin-bottom: 2rem;
+}
+.tableContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: top;
+    margin: 1rem;
+    height: 30rem;
+    overflow: auto; /* Ensures that the table is scrollable if it overflows its container */
+    border-radius: 10px; 
+
+}
+
+.table{
+    border-collapse: separate;
+    border-spacing: 0;  
+    
+}
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; /* Top-left corner */
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px; /* Top-right corner */
+    border-bottom-right-radius: 10px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #B3C4FF;
+}
+
+.table tr:nth-child(even) td:first-child {
+    border-bottom-left-radius: 10px; /* Bottom-left corner */
+    border-top-left-radius: 10px;
+    
+}
+
+.table tr:nth-child(even) td:last-child {
+    border-bottom-right-radius: 10px; /* Bottom-right corner */
+    border-top-right-radius: 10px;
+}
+th{
+    color: white;
+    background-color: #5076FF;
+    
+}
+
+td,th{
+    padding: 0.2rem;
+}
+
+.images{
+    width: 1.2rem;
+}
+.imageButton{
+    background:none;
+    border: none;
+    outline: none;
+    margin: 0rem 0.5rem;
+
+}
+
+/****************************** Confirm popup  **********************************/
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the popup is on top */
+  }
+  
+  /* Styles for the popup */
+  .popup {
+    background-color: #fff;
+    padding: 3rem;
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 35rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .popupPara{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 5rem;
+  }
+
+  .popupButtonDiv{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .popupButton{
+    border-radius: 10px;
+    padding: 0.3rem 3rem;
+    width: 10rem;
+    margin: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .popupButton:hover{
+    background-color: #FF4B4B;
+    color: white;
+    box-shadow: none;
+  }

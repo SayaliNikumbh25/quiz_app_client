@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    margin: 0;
+}
+
+.heading{
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+.information{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.button{
+    color: white;
+    border: none;
+    background-color: #1A5FFF;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 1rem;
+}

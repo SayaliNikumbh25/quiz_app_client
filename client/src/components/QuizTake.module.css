@@ -1,0 +1,217 @@
+.mainContainer {
+  background-color: #041325;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 5rem 10rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.quetionContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.textOptionDiv {
+  padding: 2rem 2rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width: 20rem;
+  text-align: center;
+  margin: 2rem;
+  box-sizing: border-box;
+}
+
+.textImageDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  height: 8rem;
+  background-color: #f0f0f0;
+  margin: 0.7rem 6rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.TextImage {
+  width: 7rem;
+  border-radius: 10px;
+  float: right;
+  margin-left: 1rem;
+}
+
+.ImageOptionDiv {
+  border-radius: 13px;
+  width: fit-content;
+  height: 8rem;
+  text-align: center;
+  margin: 0.7rem 6rem;
+}
+.images {
+  width: 17rem;
+  height: 8rem;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.optionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.buttons {
+  outline: none;
+  border: none;
+  background-color: #60b84b;
+  border-radius: 10px;
+  color: white;
+  padding: 0.7rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.result {
+  font-size: 2.2rem;
+  text-align: center;
+}
+.resultImage {
+  width: 17rem;
+}
+
+.pollContainer {
+  height:70% ;
+  padding: 5rem 10rem;
+  text-align: center;
+}
+
+.pollHeading {
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    padding: 0rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .quetionContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    padding: 1rem;
+  }
+
+  .optionContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+  }
+
+  .textOptionDiv {
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 18rem;
+    text-align: center;
+    margin: 1rem;
+    box-sizing: border-box;
+  }
+
+  .option {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .buttons {
+    outline: none;
+    border: none;
+    background-color: #60b84b;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    align-self: center;
+  }
+
+  .ImageOptionDiv {
+    height: 6rem;
+
+    margin: 0.7rem 0.5rem;
+  }
+
+  .images {
+    width: 17rem;
+    height: 6rem;
+  }
+
+  .textImageDiv {
+    height: 6rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    
+  }
+
+  .pollHeading {
+    font-size: 2rem;
+   
+  }
+
+  .pollContainer {
+    height: 70vh;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+}

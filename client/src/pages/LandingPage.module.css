@@ -1,0 +1,46 @@
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+.container{
+    margin: 5rem; 
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading{
+    font-size: 5rem;
+    margin: 2rem 2rem 0.5rem;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    
+}
+.options{
+    margin: 1rem;
+    
+}
+.buttons{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3rem 4rem;
+    border: none;
+    margin: 0px 2rem;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.shadow{
+    box-shadow: rgba(0, 25, 255, 0.24) 0px 0px 40px;
+}
